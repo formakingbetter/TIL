@@ -1,0 +1,4 @@
+CREATE DATABASE lecture;
+CREATE DATABASE practice;
+SHOW DATABASES;
+USE lecture;
