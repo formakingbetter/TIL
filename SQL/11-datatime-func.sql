@@ -92,4 +92,3 @@ SELECT
 FROM dt_demo
 GROUP BY YEAR(birth)
 ORDER BY 출생년도;
-    
