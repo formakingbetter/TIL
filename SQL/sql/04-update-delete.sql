@@ -12,3 +12,6 @@ UPDATE members SET name='홍길동', email='hong@a.com' WHERE name='이민규';
 DELETE FROM members WHERE id=6;
 -- 테이블 모든 데이터 삭제(위험)
 DELETE FROM members;
+
+DROP DATABASE lecture;
+DROP DATABASE practice;
