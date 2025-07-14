@@ -70,3 +70,34 @@ SELECT c.customer_id,
 FROM sales s
 LEFT JOIN customers c ON c.customer_id=s.customer_id
 GROUP BY c.customer_id;
+
+
+INSERT INTO sales(id, order_date, product_name,category,customer_id,product_id, quantity,unit_price,total_amount,sal) 
+VALUES(121, '2025-07-04','건전지','전자제품','fake','P9877',10,1000,10000;
+-- INNER JOIN 교집합
+-- 가장 높은 7월 구매자의 등급
+SELECT
+ '1.INNER JOIN' AS 구분,
+ COUNT(*) AS 줄수,
+ COUNT(DISTINCT c.customer_id) AS 고객수
+FROM customers c -- 보고자하는 주어가 먼저 온다. 
+INNER JOIN sales s ON c.customer_id=s.customer_id
+
+UNION 
+-- LEFT JOIN 왼쪽(FROM 뒤에 온)테이블은 무조건 다나옴
+SELECT
+	'2.LEFT JOIN' AS 구분,
+	COUNT(*) AS 줄수,
+	COUNT(DISTINCT c.customer_id) AS 고객수
+FROM customers c
+LEFT JOIN sales s ON c.customer_id=s.customer_id
+
+UNION
+
+SELECT
+	'3. 전체고객수' AS 구분,
+	 COUNT(*) AS 행수,
+     COUNT(*) AS 고객수
+FROM customers ;
+
+
