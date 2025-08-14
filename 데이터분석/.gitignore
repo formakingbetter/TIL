@@ -1,0 +1,6 @@
+#.gitignore
+namsan.csv
+*.csv
+*.xlsx
+
+
