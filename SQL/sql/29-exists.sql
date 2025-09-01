@@ -18,3 +18,5 @@ AND
 EXISTS( SELECT 1 FROM sales s3 WHERE s3.customer_id=c.customer_id AND s3.total_amount >=500000)
 ;
 SELECT * FROM sales s;
+
+-- 3. 한 번도 팔린적이 없는 상품 NOT EXISTS 활용(IN으로는 복잡함)

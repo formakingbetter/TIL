@@ -8,6 +8,14 @@ SELECT
 FROM employees 상사
 LEFT JOIN employees 직원 ON 직원.id=상사.id+1;
 
+
+
+
+SELECT 
+ 상사.name as 상사,
+ 직원.name as 직원
+FROM employees 상사
+LEFT JOIN employees 직원 ON 직원.id=상사.id+1;
 -- 고객 간 구매 패턴 유사성
 -- customers <- ij-> sales <-ij-> customers
 SELECT 
